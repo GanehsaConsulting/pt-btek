@@ -1,14 +1,28 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans, Montserrat, Poppins, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserrat = Montserrat({
+  variable: "--font-montserrat", // hanya untuk class tertentu
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const nunito = DM_Sans({
+  variable: "--font-nunito", // digunakan sebagai default
   subsets: ["latin"],
+  display: "swap",
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["devanagari"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
 
 export const metadata = {
@@ -20,7 +34,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`
+          ${montserrat.variable}
+          ${nunito.variable}
+          ${poppins.variable}
+          ${playfair.variable}
+          antialiased
+        `}
       >
         {children}
       </body>
