@@ -38,7 +38,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="my-30 mx-6 md:mx-10 space-y-20">
+    <section id="about-us" className="my-30 mx-6 md:mx-10 space-y-20">
       {/* About Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left */}

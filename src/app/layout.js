@@ -1,5 +1,7 @@
 import { DM_Sans, Montserrat, Poppins, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat", // hanya untuk class tertentu
@@ -42,7 +44,9 @@ export default function RootLayout({ children }) {
           antialiased
         `}
       >
+        <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

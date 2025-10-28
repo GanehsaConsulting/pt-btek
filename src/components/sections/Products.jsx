@@ -34,7 +34,7 @@ export const Products = () => {
   const [selected, setSelected] = useState(null);
 
   return (
-    <section className="my-30 px-6 md:px-10">
+    <section id="products" className="my-30 px-6 md:px-10">
       <header className="text-center mb-10">
         <p className="text-secondary font-semibold uppercase tracking-wide italic">
           PT Bimantara Teknologi Inovation Products
