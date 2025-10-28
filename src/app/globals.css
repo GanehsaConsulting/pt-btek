@@ -11,7 +11,7 @@ button {
   --color-primary: #2955BE;
   --color-secondary: #04045A;
   --color-darkColor: #0F0E0E;
-  --color-lightColor: #EEEEEE;
+  --color-lightColor: ;
 }
 
 @theme inline {

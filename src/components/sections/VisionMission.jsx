@@ -2,7 +2,7 @@ import React from "react";
 
 export const VisionMission = () => {
   return (
-    <section className="mb-30">
+    <section className="my-30">
       <header className="text-center my-7">
         <p className="text-secondary font-semibold uppercase tracking-wide italic">
           PT Bimantara Teknologi Inovation Values

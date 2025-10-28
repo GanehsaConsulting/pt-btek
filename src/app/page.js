@@ -1,6 +1,9 @@
 import AboutUs from "@/components/sections/AboutUs";
 import { Banner } from "@/components/sections/Banner";
+import { Consultancy } from "@/components/sections/Consultancy";
+import { Products } from "@/components/sections/Products";
 import { VisionMission } from "@/components/sections/VisionMission";
+import { WhyUs } from "@/components/sections/WhyUs";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +12,9 @@ export default function Home() {
       <Banner/>
       <AboutUs/>
       <VisionMission/>
+      <Products/>
+      <Consultancy/>
+      <WhyUs/>
     </main>
   );
 }
