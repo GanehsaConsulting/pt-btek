@@ -1,7 +1,11 @@
 import React from "react";
 import { Button } from "../ui/button";
+import Link from "next/link";
+
+export const WALink = "https://wa.me/6285658607360";
 
 export const CTA = () => {
+
   return (
     <section className="relative mx-6 md:mx-10 my-20 md:my-30 rounded-2xl overflow-hidden">
       {/* Background Image */}
@@ -17,11 +21,14 @@ export const CTA = () => {
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
         <h1 className="text-white text-2xl md:text-3xl font-semibold mb-6 max-w-2xl leading-snug font-montserrat">
-          Transfrom your business with our end-to-end technology consulting services 
+          Transfrom your business with our end-to-end technology consulting
+          services
         </h1>
-        <Button className="bg-white text-primary font-semibold rounded-full text-lg hover:bg-gray-100 transition-all">
-          Get In Touch
-        </Button>
+        <Link href={WALink} target="_blank" >
+          <Button className="bg-white text-primary font-semibold rounded-full text-lg hover:bg-gray-100 transition-all">
+            Get In Touch
+          </Button>
+        </Link>
       </div>
     </section>
   );

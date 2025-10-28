@@ -1,6 +1,8 @@
-/** @type {import('next').NextConfig} */
+// next.config.mjs
 const nextConfig = {
-  /* config options here */
+  images: {
+    domains: ["images.pexels.com", "cdn.pixabay.com"],
+  },
 };
 
 export default nextConfig;

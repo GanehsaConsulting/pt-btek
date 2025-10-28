@@ -1,5 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
+import Link from "next/link";
+import { WALink } from "./CTA";
 
 export const Banner = () => {
   return (
@@ -33,9 +35,9 @@ export const Banner = () => {
               Dedicated to delivering innovative solutions that empower
               businesses and communities in the digital era.
             </p>
-            <div className="flex md:justify-end">
+            <Link href={WALink} target="_blank" className="flex md:justify-end">
               <Button className="bg-primary rounded-full">Get In Touch</Button>
-            </div>
+            </Link>
           </div>
 
           <div className="relative overflow-hidden rounded-4xl md:rounded-[3rem] mt-8 w-full aspect-[16/9] md:aspect-auto h-80">
