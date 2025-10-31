@@ -4,29 +4,45 @@ import { WALink } from "./sections/CTA";
 
 export const Footer = () => {
   return (
-    <footer className=" mx-10 p-10 bg-gray-100 rounded-4xl mb-10">
-      <section className="grid grid-cols-4 mb-5" >
-        <div className="col-span-2 space-y-3">
+    <footer className="mx-5 md:mx-10 mt-20 p-8 md:p-10 bg-gray-100 rounded-4xl mb-10">
+      {/* Grid utama */}
+      <section className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        {/* Kiri: Branding */}
+        <div className="md:col-span-2 space-y-3">
           <h1 className="text-4xl font-montserrat font-bold text-primary">
             BTEK
           </h1>
           <p className="font-bold text-lg">PT Bimantara Teknologi Inovation</p>
-          <p>Empowering Innovation Through Technology Solutions</p>
+          <p className="text-gray-700">
+            Empowering Innovation Through Technology Solutions
+          </p>
         </div>
+
+        {/* Tengah: Pages */}
         <div className="flex flex-col space-y-2">
-          <h1 className="font-bold mb-5">Pages</h1>
-          <Link href="/">home</Link>
-          <Link href="#about-us">about us</Link>
-          <Link href="#products">products</Link>
+          <h1 className="font-bold mb-4 text-lg">Pages</h1>
+          <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+          <Link href="#about-us" className="hover:text-primary transition-colors">About Us</Link>
+          <Link href="#products" className="hover:text-primary transition-colors">Products</Link>
         </div>
+
+        {/* Kanan: Contact */}
         <div className="flex flex-col space-y-2">
-          <h1 className="font-bold mb-5">Contact</h1>
-          <Link href={WALink} target="_blank">+62 856 5860 7360</Link>
-          <Link href="/" target="_blank">Sales@btek.biz.id</Link>
+          <h1 className="font-bold mb-4 text-lg">Contact</h1>
+          <Link href={WALink} target="_blank" className="hover:text-primary transition-colors">
+            +62 856 5860 7360
+          </Link>
+          <Link href="mailto:Sales@btek.biz.id" className="hover:text-primary transition-colors">
+            Sales@btek.biz.id
+          </Link>
         </div>
       </section>
-      <section className="text-center pt-5 mt-5 border border-t-black" >
-            <p>©2025 PT Bimantara Teknologi Inovation. All rights reserved.</p>
+
+      {/* Garis bawah */}
+      <section className="text-center pt-5 mt-5 border-t border-gray-300">
+        <p className="text-gray-600 text-sm">
+          ©2025 PT Bimantara Teknologi Inovation. All rights reserved.
+        </p>
       </section>
     </footer>
   );

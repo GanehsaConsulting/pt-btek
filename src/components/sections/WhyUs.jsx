@@ -13,7 +13,7 @@ export const WhyUs = () => {
     },
     {
       title: "Tailored Strategies",
-      desc: "Customized approach or plan designed to meet the unique needs, characteristics, and goals of a specific individual, group, or situation, rather than using a generic, 'one-size-fits-all' method.",
+      desc: "Customized approach or plan designed to meet the unique needs, characteristics, and goals of a specific individual, group, or situation, rather than using a generic, one-size-fits-all method.",
     },
     {
       title: "Cost-Effective Solutions",
@@ -22,32 +22,43 @@ export const WhyUs = () => {
   ];
 
   return (
-    <section className="my-20 py-10 px-10 grid grid-cols-2 gap-10 bg-gray-100">
-      <div>
-        <p className="text-secondary font-semibold uppercase tracking-wide italic">
-          Why Us?
-        </p>
-        <h1 className="font-poppins text-black font-bold text-4xl md:text-6xl leading-tight">
-          Why You Should{" "}
-          <span className="text-primary font-playfair italic">Choose Us</span>?
-        </h1>
-      </div>
+    <section className="my-20 md:my-30 py-10 px-5 sm:px-8 md:px-10 lg:px-20 bg-gray-100">
+      {/* Grid Container */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
+        {/* Left Section */}
+        <div className="space-y-5">
+          <p className="text-secondary font-semibold uppercase tracking-wide italic">
+            Why Us?
+          </p>
+          <h1 className="font-poppins text-black font-bold text-3xl sm:text-4xl md:text-6xl leading-tight max-w-lg">
+            Why You Should{" "}
+            <span className="text-primary font-playfair italic">Choose Us</span>?
+          </h1>
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-md">
+            We bring together innovation, data insights, and tailored strategies
+            to help your business stay ahead in the fast-evolving digital era.
+          </p>
+        </div>
 
-      <div className="grid grid-rows-4 gap-6">
-        {data.map((item, index) => (
-          <div
-            key={index}
-            className="flex items-start gap-5 pb-5 border-b-2 border-gray-200"
-          >
-            <FaCheckDouble className="text-2xl text-primary shrink-0" />
-            <div className="space-y-3">
-              <h1 className="font-bold font-montserrat text-2xl">
-                {item.title}
-              </h1>
-              <p className="text-gray-700">{item.desc}</p>
+        {/* Right Section */}
+        <div className="grid grid-cols-1 gap-7">
+          {data.map((item, index) => (
+            <div
+              key={index}
+              className="flex items-start gap-5 pb-6 border-b border-gray-200 hover:border-primary/60 transition-colors duration-300"
+            >
+              <FaCheckDouble className="text-2xl text-primary shrink-0 mt-1" />
+              <div className="space-y-2">
+                <h2 className="font-bold font-montserrat text-lg sm:text-xl md:text-2xl">
+                  {item.title}
+                </h2>
+                <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

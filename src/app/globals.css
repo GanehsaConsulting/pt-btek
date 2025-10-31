@@ -136,3 +136,7 @@ button {
     @apply bg-background text-foreground;
   }
 }
+
+.margin{
+  @apply mx-4 md:mx-10 2xl:mx-70
+}
