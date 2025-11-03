@@ -47,7 +47,7 @@ export const WhyUs = () => {
               key={index}
               className="flex items-start gap-5 pb-6 border-b border-gray-200 hover:border-primary/60 transition-colors duration-300"
             >
-              <FaCheckDouble className="text-2xl text-primary shrink-0 mt-1" />
+              <FaCheckDouble className="text-2xl text-dark-red shrink-0 mt-1" />
               <div className="space-y-2">
                 <h2 className="font-bold font-montserrat text-lg sm:text-xl md:text-2xl">
                   {item.title}

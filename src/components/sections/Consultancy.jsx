@@ -6,7 +6,7 @@ export const Consultancy = () => {
       {/* Header */}
       <header className="text-start space-y-5 md:space-y-7 mb-10">
         <h1 className="font-poppins max-w-xl text-black font-bold text-3xl sm:text-4xl md:text-6xl leading-tight">
-          Consultancy and{" "}
+         <span className="text-dark-red font-playfair italic" > Consultancy</span> and{" "}
           <span className="text-primary font-playfair italic">Managed</span>{" "}
           Services
         </h1>
@@ -24,9 +24,9 @@ export const Consultancy = () => {
       {/* Content Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
         {/* Left: Cards */}
-        <div className="grid grid-rows-2 gap-5 order-2 md:order-1">
-          <div className="bg-gradient-to-tr from-primary to-secondary text-white hover:scale-[1.03] transition-transform duration-300 rounded-3xl md:rounded-4xl p-5 md:p-7 shadow-lg">
-            <h1 className="font-semibold text-xl sm:text-2xl mb-3 font-montserrat">
+        <div className="grid h-full grid-rows-2 gap-5 order-2 md:order-1">
+          <div className="flex flex-col justify-center bg-linear-to-tr from-primary to-secondary text-white hover:scale-[1.03] transition-transform duration-300 rounded-3xl md:rounded-4xl p-5 md:p-7 shadow-lg">
+            <h1 className="font-semibold text-xl sm:text-3xl mb-3 font-playfair italic ">
               Consultancy
             </h1>
             <p className="text-sm sm:text-base leading-relaxed">
@@ -37,8 +37,8 @@ export const Consultancy = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-primary to-secondary text-white hover:scale-[1.03] transition-transform duration-300 rounded-3xl md:rounded-4xl p-5 md:p-7 shadow-lg">
-            <h1 className="font-semibold text-xl sm:text-2xl mb-3 font-montserrat">
+          <div className="flex flex-col justify-center bg-linear-to-br from-dark-red to-red-900 text-white hover:scale-[1.03] transition-transform duration-300 rounded-3xl md:rounded-4xl p-5 md:p-7 shadow-lg">
+            <h1 className="font-semibold text-xl sm:text-3xl mb-3 font-playfair italic">
               Managed Service
             </h1>
             <p className="text-sm sm:text-base leading-relaxed">

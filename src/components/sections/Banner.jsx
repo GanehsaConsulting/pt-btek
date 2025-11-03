@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { WALink } from "./CTA";
+import clsx from "clsx";
 
 export const Banner = () => {
   const titleStyle =
@@ -21,7 +22,7 @@ export const Banner = () => {
                 Technology
               </span>{" "}
             </h1>
-            <h1 className={titleStyle}>Solutions</h1>
+            <h1 className={clsx(titleStyle,"")}>Solutions</h1>
           </div>
 
           {/* banner 1 */}
@@ -46,7 +47,7 @@ export const Banner = () => {
               target="_blank"
               className="inline-block md:flex md:justify-end"
             >
-              <Button className="bg-primary rounded-full px-6 py-2 text-sm md:text-base">
+              <Button className="bg-linear-to-br from-primary to-secondary rounded-full px-6 py-2 text-sm md:text-base">
                 Get In Touch
               </Button>
             </Link>

@@ -20,9 +20,10 @@ export const Navbar = () => {
       {/* NAVBAR */}
       <nav className="flex items-center justify-between py-3 sticky top-0 z-50 drop-shadow-xl backdrop-blur-2xl bg-white/50 px-4 md:px-10 2xl:px-70">
         {/* Logo */}
-        <div className="text-2xl sm:text-3xl md:text-4xl font-montserrat font-bold text-primary">
+        {/* <div className="text-2xl sm:text-3xl md:text-4xl font-montserrat font-bold text-primary">
           BTEK
-        </div>
+        </div> */}
+        <img src="/logo.png" alt="logo" className="w-16 sm:w-20" />
 
         {/* Nav Links - Desktop */}
         <div className="hidden md:flex items-center gap-5 lg:gap-7 font-semibold font-montserrat text-sm lg:text-base">
@@ -48,16 +49,14 @@ export const Navbar = () => {
         {/* Right Controls */}
         <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
           <Link href={WALink} target="_blank">
-            <Button className=" bg-linear-to-br from-primary to-secondary rounded-full ps-2 sm:ps-3 pe-1 hidden sm:flex justify-between items-center text-xs sm:text-sm md:text-base h-8 sm:h-9 md:h-10">
+            <Button className=" bg-linear-to-br from-red-400 to-red-900 rounded-full ps-2 sm:ps-3 pe-1 hidden sm:flex justify-between items-center text-xs sm:text-sm h-8 sm:h-9 md:h-10">
               <span className="hidden sm:inline">Contact Us</span>
-              <span className="inline sm:hidden">Contact</span>
               <div className="p-0.5 sm:p-1 bg-white rounded-full ml-1 sm:ml-2">
                 <MdArrowOutward className="text-primary text-sm sm:text-base" />
               </div>
             </Button>
           </Link>
 
-         
           {/* Hamburger Button */}
           <Button
             onClick={toggleMenu}
@@ -121,10 +120,9 @@ export const Navbar = () => {
               </a>
             </div>
 
-
             {/* Contact Button - Mobile */}
             <Link href={WALink} target="_blank" onClick={closeMenu}>
-              <Button className="w-full bg-linear-to-br from-primary to-secondary rounded-full py-3 flex justify-between items-center">
+              <Button className="w-full bg-linear-to-br from-dark-red to-secondary rounded-full py-3 flex justify-between items-center">
                 <span>Contact Us</span>
                 <div className="p-1 bg-white rounded-full">
                   <MdArrowOutward className="text-primary" />

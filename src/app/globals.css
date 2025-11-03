@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 button {
-  @apply cursor-pointer  
+  @apply cursor-pointer hover:scale-105 active:scale-95 transition-transform; 
 }
 
 @theme {
@@ -12,6 +12,9 @@ button {
   --color-secondary: #04045A;
   --color-darkColor: #0F0E0E;
   --color-lightColor: ;
+
+  --color-light-red: #ED1B24;
+  --color-dark-red: #CF0E2C;
 }
 
 @theme inline {

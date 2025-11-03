@@ -43,7 +43,7 @@ const AboutUs = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left */}
         <div className="space-y-2 text-center md:text-left">
-          <p className="text-secondary font-semibold uppercase tracking-wide italic">
+          <p className="text-dark-red font-semibold uppercase tracking-wide italic">
             Who's PT Bimantara Teknologi Inovation?
           </p>
 
@@ -87,7 +87,7 @@ const AboutUs = () => {
                 onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? "bg-primary w-4"
+                    ? "bg-dark-red w-4"
                     : "bg-black/20 hover:bg-black/40"
                 }`}
               ></button>
@@ -100,7 +100,7 @@ const AboutUs = () => {
       <div className="mt-10">
         <div className="text-center md:text-left mb-10">
           <h2 className="font-poppins text-black font-bold text-4xl md:text-5xl leading-tight">
-            Team <span className="text-primary font-playfair italic">Capability</span>
+            Team <span className="text-dark-red font-playfair italic">Capability</span>
           </h2>
         </div>
 

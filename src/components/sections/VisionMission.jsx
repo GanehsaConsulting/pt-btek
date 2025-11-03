@@ -12,7 +12,7 @@ export const VisionMission = () => {
         <h1 className="font-poppins text-black font-bold text-3xl sm:text-4xl md:text-6xl leading-tight">
           Our{" "}
           <span className="text-primary font-playfair italic">Vision</span> and{" "}
-          <span className="text-primary font-playfair italic">Mission</span>
+          <span className="text-dark-red font-playfair italic">Mission</span>
         </h1>
       </header>
 

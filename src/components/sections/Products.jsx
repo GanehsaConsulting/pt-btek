@@ -43,7 +43,7 @@ export const Products = () => {
     <section id="products" className="my-30 px-6 md:px-10">
       {/* Header */}
       <header className="text-center mb-10">
-        <p className="text-secondary font-semibold uppercase tracking-wide italic">
+        <p className="text-dark-red font-semibold uppercase tracking-wide italic">
           PT Bimantara Teknologi Inovation Products
         </p>
         <h1 className="font-poppins text-black font-bold text-4xl md:text-6xl leading-tight">
