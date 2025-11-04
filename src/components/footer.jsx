@@ -12,36 +12,66 @@ export const Footer = () => {
           {/* <h1 className="text-4xl font-montserrat font-bold text-primary">
             BTEK
           </h1> */}
-          <img src="/logo.png" alt="logo" className="w-30" />
+          <img src="logo.png" alt="logo" className="w-30" />
           <p className="font-bold text-lg">PT Bimantara Teknologi Inovation</p>
           {/* <p className="text-gray-700">
             Empowering Innovation Through Technology Solutions
           </p> */}
           <p className="text-gray-700 text-sm ">
-            MTH Square Ground Floor (GF) A4 A, Jl. Letjen M.T. Haryono Kav 10, RT/RW. 006/012, Kelurahan Bidara Cina, Kecamatan Jatinegara, Jakarta Timur 13330
+            MTH Square Ground Floor (GF) A4 A, Jl. Letjen M.T. Haryono Kav 10,
+            RT/RW. 006/012, Kelurahan Bidara Cina, Kecamatan Jatinegara,
+            Jakarta Timur 13330
           </p>
         </div>
 
         {/* Tengah: Pages */}
         <div className="flex flex-col space-y-2">
           <h1 className="font-bold mb-4 text-lg">Pages</h1>
-          <Link href="/" className="hover:text-primary transition-colors">Home</Link>
-          <Link href="#about-us" className="hover:text-primary transition-colors">About Us</Link>
-          <Link href="#products" className="hover:text-primary transition-colors">Products</Link>
+          <Link href="/" className="hover:text-primary transition-colors">
+            Home
+          </Link>
+          <Link
+            href="#about-us"
+            className="hover:text-primary transition-colors"
+          >
+            About Us
+          </Link>
+          <Link
+            href="#products"
+            className="hover:text-primary transition-colors"
+          >
+            Products
+          </Link>
         </div>
 
         {/* Kanan: Contact */}
         <div className="flex flex-col space-y-2">
           <h1 className="font-bold mb-4 text-lg">Contact</h1>
-          <Link href={WALink} target="_blank" className="hover:text-primary transition-colors">
+          <Link
+            href={WALink}
+            target="_blank"
+            className="hover:text-primary transition-colors"
+          >
             +62 856 5860 7360
           </Link>
-          <Link href="mailto:Sales@btek.biz.id" className="hover:text-primary transition-colors">
+          <Link
+            href="mailto:sales@btek.biz.id"
+            className="hover:text-primary transition-colors"
+          >
+            sales@btek.biz.id
+          </Link>
+          {/* <Link
+            href="mailto:isep@btek.biz.id"
+            className="hover:text-primary transition-colors"
+          >
             isep@btek.biz.id
           </Link>
-          <Link href="mailto:Sales@btek.biz.id" className="hover:text-primary transition-colors">
+          <Link
+            href="mailto:sutrisno@btek.biz.id"
+            className="hover:text-primary transition-colors"
+          >
             sutrisno@btek.biz.id
-          </Link>
+          </Link> */}
         </div>
       </section>
 

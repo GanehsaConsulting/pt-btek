@@ -43,7 +43,7 @@ export const Products = () => {
     <section id="products" className="my-30 px-6 md:px-10">
       {/* Header */}
       <header className="text-center mb-10">
-        <p className="text-dark-red font-semibold uppercase tracking-wide italic">
+        <p className="text-primary font-semibold uppercase tracking-wide italic">
           PT Bimantara Teknologi Inovation Products
         </p>
         <h1 className="font-poppins text-black font-bold text-4xl md:text-6xl leading-tight">
@@ -52,7 +52,7 @@ export const Products = () => {
       </header>
 
       {/* GRID PRODUCT */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div className="ease-in-out transition-3000 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {products.map((item, index) => (
           <div
             key={index}
