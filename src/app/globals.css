@@ -13,8 +13,8 @@ button {
   --color-darkColor: #0F0E0E;
   --color-lightColor: ;
 
-  --color-light-red: #ED1B24;
-  --color-dark-red: #CF0E2C;
+  --color-light-red: #FE5500;
+  --color-dark-red: #FE5500;
 }
 
 @theme inline {

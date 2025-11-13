@@ -15,6 +15,8 @@ export const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
+  const contactNavBtN = "bg-linear-to-br from-primary to-secondary rounded-full"
+
   return (
     <>
       {/* NAVBAR */}
@@ -49,7 +51,7 @@ export const Navbar = () => {
         {/* Right Controls */}
         <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
           <Link href={WALink} target="_blank">
-            <Button className=" bg-linear-to-br from-primary to-secondary rounded-full ps-2 sm:ps-3 pe-1 hidden sm:flex justify-between items-center text-xs sm:text-sm h-8 sm:h-9 md:h-10">
+            <Button className={`ps-2 sm:ps-3 pe-1 hidden sm:flex justify-between items-center text-xs sm:text-sm h-8 sm:h-9 md:h-10 ${contactNavBtN} `}>
               <span className="hidden sm:inline">Contact Us</span>
               <div className="p-0.5 sm:p-1 bg-white rounded-full ml-1 sm:ml-2">
                 <MdArrowOutward className="text-primary text-sm sm:text-base" />
@@ -122,7 +124,7 @@ export const Navbar = () => {
 
             {/* Contact Button - Mobile */}
             <Link href={WALink} target="_blank" onClick={closeMenu}>
-              <Button className="w-full bg-linear-to-br from-primary to-secondary rounded-full py-3 flex justify-between items-center">
+              <Button className={`w-full  py-3 flex justify-between items-center ${contactNavBtN} `}>
                 <span>Contact Us</span>
                 <div className="p-1 bg-white rounded-full">
                   <MdArrowOutward className="text-primary" />
