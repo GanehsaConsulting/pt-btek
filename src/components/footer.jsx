@@ -13,7 +13,7 @@ export const Footer = () => {
             BTEK
           </h1> */}
           <img src="logo.png" alt="logo" className="w-30" />
-          <p className="font-bold text-lg">PT Bimantara Teknologi Inovation</p>
+          <p className="font-bold text-lg">PT Bimantara Teknologi Inovasi</p>
           {/* <p className="text-gray-700">
             Empowering Innovation Through Technology Solutions
           </p> */}
@@ -78,7 +78,7 @@ export const Footer = () => {
       {/* Garis bawah */}
       <section className="text-center pt-5 mt-5 border-t border-gray-300">
         <p className="text-gray-600 text-sm">
-          ©2025 PT Bimantara Teknologi Inovation. All rights reserved.
+          ©2025 PT Bimantara Teknologi Inovasi. All rights reserved.
         </p>
       </section>
     </footer>

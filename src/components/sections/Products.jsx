@@ -13,7 +13,7 @@ export const Products = () => {
     },
     {
       title: "Network Device Inovation",
-      desc: "PT Bimantara Teknologi Inovation provides services to merge different technology components, like hardware, software, and networks, into a single, cohesive system for businesses.",
+      desc: "PT Bimantara Teknologi Inovasi provides services to merge different technology components, like hardware, software, and networks, into a single, cohesive system for businesses.",
       thumbnail: "https://cdn.pixabay.com/photo/2019/08/08/16/51/network-4393368_1280.jpg",
       image: "/network.png",
     },
@@ -44,7 +44,7 @@ export const Products = () => {
       {/* Header */}
       <header className="text-center mb-10">
         <p className="text-primary font-semibold uppercase tracking-wide italic">
-          PT Bimantara Teknologi Inovation Products
+          PT Bimantara Teknologi Inovasi Products
         </p>
         <h1 className="font-poppins text-black font-bold text-4xl md:text-6xl leading-tight">
           <span className="text-primary font-playfair italic">Our</span> Products

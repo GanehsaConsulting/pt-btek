@@ -44,7 +44,7 @@ const AboutUs = () => {
         {/* Left */}
         <div className="space-y-2 text-center md:text-left">
           <p className="text-secondary font-semibold uppercase tracking-wide italic">
-            Who's PT Bimantara Teknologi Inovation?
+            Who's PT Bimantara Teknologi Inovasi?
           </p>
 
           <h1 className="font-poppins text-black font-bold text-4xl md:text-6xl leading-tight">
@@ -55,7 +55,7 @@ const AboutUs = () => {
           </h1>
 
           <p className="text-base md:text-lg mt-6 md:mt-8 font-medium max-w-xl mx-auto md:mx-0 text-gray-700">
-            PT Bimantara Teknologi Inovation established in 2025, is a
+            PT Bimantara Teknologi Inovasi established in 2025, is a
             forward-thinking technology company dedicated to delivering innovative
             solutions that empower businesses and communities in the digital era.
             With a strong focus on research, development, and implementation of

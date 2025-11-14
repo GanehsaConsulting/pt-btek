@@ -6,7 +6,7 @@ export const VisionMission = () => {
       {/* Header */}
       <header className="text-center mb-10">
         <p className="text-secondary font-semibold uppercase tracking-wide italic">
-          PT Bimantara Teknologi Inovation Values
+          PT Bimantara Teknologi Inovasi Values
         </p>
 
         <h1 className="font-poppins text-black font-bold text-3xl sm:text-4xl md:text-6xl leading-tight">
@@ -33,7 +33,7 @@ export const VisionMission = () => {
             </h1>
             <div className="bg-white/10 backdrop-blur-md shadow-md rounded-2xl p-4 md:p-5 text-white text-sm md:text-base leading-relaxed">
               <p>
-                PT Bimantara Teknologi Inovation is a forward-thinking
+                PT Bimantara Teknologi Inovasi is a forward-thinking
                 technology company dedicated to delivering innovative solutions
                 that empower businesses and communities in the digital era. With
                 a strong focus on research, development, and implementation of
